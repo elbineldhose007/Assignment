@@ -1,4 +1,4 @@
-# __📂02.JavaScript Assignment💻__
+# __📂02.JAVASCRIPT Assignment💻__
 
 ## Section A: Basic Questions
 
