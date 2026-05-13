@@ -976,7 +976,7 @@ Formula `BMI = weight / (height _ height)` uses `/` for division and `_` for mul
 ### __26. Create a discount percentage calculator.__
 ### discountPercentage = ((MRP – sellingPrice) * 100) / MRP
 
-*Basic calculation:*
+### Basic calculation:
 
 let MRP = 1000;           // Maximum Retail Price
 

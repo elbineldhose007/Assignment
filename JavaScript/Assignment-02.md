@@ -6,15 +6,24 @@
 ### JavaScript has *8 data types:
 
 7 Primitive types* – single, immutable values:
+
 1. *String* – text: `"hello"`
+
 2. *Number* – integers/decimals: `42`, `3.14`
+
 3. *BigInt* – large integers: `123n`
+
 4. *Boolean* – `true` / `false`
+
 5. *Undefined* – variable declared, no value
+
 6. *Null* – intentional empty value
+
 7. *Symbol* – unique identifier: `Symbol()`
 
+
 *1 Non-primitive type*:
+
 8. *Object* – collections of data: `{key: "value"}`, arrays `[1,2]`, functions are also objects.
 
 ## __2. List all primitive data types in JavaScript.__
@@ -22,38 +31,52 @@
 All Primitive Data Types in JavaScript – 7 total
 
 1. *String* – Text data  
+
    Ex: `"Hello"`, `'JS'`, `` `template` ``
 
 2. *Number* – Integers & floating point  
+
    Ex: `10`, `3.14`, `-5`, `NaN`, `Infinity`
 
 3. *BigInt* – Large integers beyond `Number` limit  
+
    Ex: `123456789012345678901234567890n`
 
 4. *Boolean* – Logical value  
+
    Ex: `true`, `false`
 
+
 5. *Undefined* – Variable declared but not assigned  
+
    Ex: `let x;` → `x` is `undefined`
 
 6. *Null* – Intentional absence of any value  
+
    Ex: `let y = null`
 
 7. *Symbol* – Unique, immutable identifier  
+
    Ex: `Symbol("id")`, `Symbol()`
+
 ## __3. What is the difference between primitive and non-primitive data types?__
 
 Primitive types: Store a single value directly. They are _immutable_ and _copied by value_.  
+
 Ex: `String`, `Number`, `Boolean`, `null`, `undefined`, `Symbol`, `BigInt`
 
 Non-Primitive types: Store collections or complex data. They are _mutable_ and _copied by reference_.  
+
 Ex: `Object`, `Array`, `Function`
 
 *Key difference*:  
+
 Primitives hold the _actual value_ in memory. Non-primitives hold a _reference/address_ to the data in memory.
 
 *Example*:  
+
 `let a = 5; let b = a;` → `b` gets a separate copy.  
+
 `let obj1 = {x:5}; let obj2 = obj1;` → both point to the same object.
 
 ## __4. What is the `typeof` operator? Give examples.__
@@ -63,32 +86,54 @@ Primitives hold the _actual value_ in memory. Non-primitives hold a _reference/a
 *Syntax*: `typeof value` or `typeof(value)`
 
 *Examples:*
+
 typeof "hello"      // "string"
+
 typeof 42           // "number" 
+
 typeof true         // "boolean"
+
 typeof undefined    // "undefined"
+
 typeof {a: 1}       // "object"
+
 typeof [1, 2]       // "object" 
+
 typeof function(){} // "function"
+
 typeof null         // "object"  ← known JS bug
+
 
 ## __5. What is the `undefined` data type?__
 
 `undefined` is a primitive data type in JavaScript.
 
 *When it occurs:*
+
 1. *Variable declared but not assigned*  
+
    let x; 
+
    console.log(x); // undefined
+
 2. *Function has no return value*  
+
    function test() {}
+
    console.log(test()); // undefined
+
 3. *Accessing non-existent object property*  
+
    let obj = {};
+
    console.log(obj.name); // undefined
+
 *Key points:*
+
 - It’s both a _type_ and a _value_.
+
 - `typeof undefined` → `"undefined"`
+
 - Different from `null` – `undefined` means “not assigned”, `null` means “intentionally empty”.
 
 ## __6. What is `null` in JavaScript?__
@@ -96,29 +141,41 @@ typeof null         // "object"  ← known JS bug
 `null` is a primitive data type that represents _intentional absence of any value_.
 
 *Key points:*
+
 1. *Meaning*: You purposely set a variable to "empty" or "no value".
+
 2. *Type*: `typeof null` → `"object"` – this is a famous JS bug, but `null` is actually a primitive.
+
 3. *Difference from `undefined`*: `undefined` = not assigned yet. `null` = deliberately empty.
 
+
+
 *Example:*
+
 let user = null; // no user logged in yet
+
 user = {name: "Arun"}; // later assigned
 
 let x; 
+
 console.log(x); // undefined – not assigned
+
 console.log(user); // null – we set it empty on purpose
 
 ## __7. What is the difference between `null` and `undefined`?__
 
 *`undefined`*: JS sets it automatically when a variable is declared but not given a value.  
+
 Ex: `let x;` → `x` is `undefined`
 
 *`null`*: You assign it manually to show "empty" or "no value" on purpose.  
+
 Ex: `let y = null;` → you set it empty
 
 *Key difference*: `undefined` = not assigned yet. `null` = intentionally empty.
 
 `typeof undefined` → `"undefined"`  
+
 `typeof null` → `"object"`
 
 ## __8. What is the `boolean` data type? Give examples.__
@@ -128,18 +185,24 @@ Ex: `let y = null;` → you set it empty
 *Used for*: Logical operations, conditions, yes/no decisions.
 
 *Examples:*
+
 let isOnline = true;
+
 let isLoggedIn = false;
 
+
 console.log(5 > 3);      // true
+
 console.log(10 === 5);   // false
 
 if (isOnline) {
+
   console.log("User is online"); // runs because true
 }
 *Type check*: `typeof true` → `"boolean"`
 
 *Falsy values*: `false`, `0`, `""`, `null`, `undefined`, `NaN` become `false` in conditions.  
+
 Everything else is `truthy`.
 
 ## __9. What is a `string` in JavaScript?__
@@ -147,12 +210,19 @@ Everything else is `truthy`.
 `String` is a primitive data type used to store _text_.
 
 *How to create*: Use single quotes `' '`, double quotes `" "`, or backticks `` ` ``
+
 let name = "Arun";
+
 let city = 'Guruvayoor';
+
 let msg = `Hello, ${name}`; // template literal
+
 *Key points:*
+
 1. *Immutable* – once created, you can’t change characters directly.
+
 2. *Indexed* – `name[0]` → `"A"`
+
 3. *Has properties/methods* – `name.length` → `4`, `name.toUpperCase()` → `"ARUN"`
 
 *Type check*: `typeof "hello"` → `"string"`
@@ -165,17 +235,24 @@ let msg = `Hello, ${name}`; // template literal
 `Number` is a primitive type in JavaScript for _numeric values_.
 
 *Does JS have separate integers and floats?*  
+
 *No.* JS has only _one_ `Number` type for both integers and floats. Both are stored as 64-bit floating point.
 
 *Examples:*
 let age = 25;        // integer
+
 let price = 99.99;   // float
+
 let temp = -5;       // negative
+
 let inf = Infinity;  // special number
+
 let notNum = NaN;    // "Not a Number"
 
 typeof 10     // "number"
+
 typeof 3.14   // "number" 
+
 *Note*: For very large integers, use `BigInt` → `123n`
 
 *In short*: JS `Number` covers both integers and decimals. No separate `int` or `float` type.
@@ -192,29 +269,39 @@ typeof 3.14   // "number"
 
 *Example:*
 let id1 = Symbol("id");
+
 let id2 = Symbol("id");
 
 console.log(id1 === id2); // false – always unique
+
 *Main use*: Add unique property keys to objects so they don’t clash.
+
 const user = {};
+
 let userId = Symbol("id");
+
 user[userId] = 101;
+
 *Type check*: `typeof Symbol()` → `"symbol"`
 
 ## __12. What is `bigint` and why is it used?__
 
 `BigInt` is a primitive data type for _very large integers_ that `Number` can’t safely store.
 
-*Why used*: `Number` in JS is 64-bit float and loses precision beyond `2^53 - 1` → `9007199254740991`.  
+*Why used*: `Number` in JS is 64-bit float and loses precision beyond `2^53 - 1` → `9007199254740991`. 
+
 `BigInt` handles numbers bigger than that.
 
 *How to create*: Add `n` at the end, or use `BigInt()`
+
 let big = 9007199254740993n; 
+
 let big2 = BigInt(9007199254740993);
 
 typeof big  // "bigint"
 *Rules*: 
 1. Can't mix with `Number` → `10n + 5` gives error. Do `10n + 5n`.
+
 2. No decimals → `10n / 3n` → `3n`
 
 *Use case*: Cryptography, large IDs, financial calculations needing exact integers.
@@ -222,35 +309,53 @@ typeof big  // "bigint"
 ## __13. What happens when you use `typeof null`?__
 
 typeof null  // "object"
+
 *What happens*: It returns `"object"`, not `"null"`.
 
 *Why*: This is a famous bug in JavaScript from version 1. In the original JS, values were stored as type tags. `null` was represented as all zeros, same as object tag. So `typeof null` became `"object"`.
 
+
 *Note*: Even though it says `"object"`, `null` is actually a _primitive_, not an object.
 
 *How to check for null correctly:*
+
 let x = null;
+
 console.log(x === null); // true – use this instead
+
 
 ## __14. Explain type coercion with examples.__
 Type coercion is when JavaScript _automatically converts_ one data type to another.
 
+
 *Two types:*
 1. *Implicit* – JS does it automatically 
+
 2. *Explicit* – You do it on purpose
 
 *Implicit Examples:*
+
 "5" + 2       // "52" → number 2 becomes string, + does concat
+
 "5" - 2       // 3    → string "5" becomes number, - does math
+
 true + 1      // 2    → true becomes 1
+
 null + 1      // 1    → null becomes 0
+
 undefined + 1 // NaN  → undefined becomes NaN
 
+
 if ("hello") { } // "hello" becomes true
+
 if (0) { }       // 0 becomes false
+
 *Explicit Examples:*
+
 Number("5")   // 5
+
 String(10)    // "10"
+
 Boolean(0)    // false
 *Key rule*: `+` with string does concat. Other math operators `- * /` force numbers.
 
@@ -259,22 +364,38 @@ Boolean(0)    // false
 ## __15. What is implicit and explicit type conversion?__
 
 *1. Implicit Conversion / Coercion*  
+
 JavaScript converts types _automatically_ behind the scenes.
+
 "5" + 3        // "53"  → 3 becomes string because of +
+
 "10" - 2       // 8     → "10" becomes number because of -
+
+
 if ("hello")   // true  → string becomes boolean
+
 true + 1       // 2     → true becomes 1
+
 *Happens with*: `+` if one operand is string, math operators `- * /`, `==`, `if()` conditions.
 
 *2. Explicit Conversion / Type Casting*  
+
 You manually convert types using functions.
+
 Number("5")    // 5
+
 String(100)    // "100"
+
 Boolean(0)     // false
+
 parseInt("5.9")  // 5
+
 parseFloat("3.14") // 3.14
+
 *In short*:  
+
 *Implicit* = JS does it auto, can be tricky.  
+
 *Explicit* = You do it with `Number()`, `String()`, `Boolean()`. More predictable.
 
 ## __16. What is `NaN`? When does it occur?__
@@ -283,17 +404,28 @@ parseFloat("3.14") // 3.14
 
 *When it occurs:*
 0 / 0                  // NaN
+
 "hello" * 5            // NaN – can't multiply text
+
 Number("abc")          // NaN – can't convert to number
+
 Math.sqrt(-1)          // NaN – invalid math
+
 undefined + 1          // NaN
+
 parseInt("text")       // NaN
+
 *Key weirdness:*
 typeof NaN     // "number" – yes, it's still Number type
+
 NaN === NaN    // false – NaN is never equal to itself
+
 *How to check:*
+
 isNaN("hello")        // true 
+
 Number.isNaN(NaN)     // true – safer, no coercion
+
 `NaN` = result of invalid math or failed number conversion. Check with `Number.isNaN()`.
 
 ## 🔎Section C: Practical / Coding Questions
@@ -385,18 +517,27 @@ console.log(Number(price));      // 19.99
 *3 ways to convert number → string:*
 let num = 42;
 
+
 // 1. String()
+
 let str1 = String(num);
+
 console.log(str1, typeof str1);  // "42" string
 
 // 2. toString()
+
 let str2 = num.toString();
+
 console.log(str2, typeof str2);  // "42" string
 
 // 3. Template literal or concatenation
+
 let str3 = `${num}`;
+
 let str4 = num + "";
+
 console.log(str3, typeof str3);  // "42" string
+
 *Note*: `toString()` won't work on `null` or `undefined`, but `String()` handles those. `String(null)` gives `"null"`.
 
 ### __21. What will be the output of:__
