@@ -1,6 +1,6 @@
-# __03 📁JAVASCRIPT Assignment🖥__ 
+# __03 📁JAVASCRIPT Assignment💻__ 
 
-## Section A: Theory & Basics
+## 🔎Section A: Theory & Basics
 
 ### __01. What is variables in javascript?__
 
@@ -74,7 +74,7 @@ alert(message);
 
 *In short*: Use `camelCase` for most things, `PascalCase` for classes, `UPPER_CASE` for constants. Keep names clear and meaningful.
 
-## Section B: Practical Problems
+## 🔎Section B: Practical Problems
 
 ### __6. Create variables for age, city, and isStudent. Print them in one sentence.__
 

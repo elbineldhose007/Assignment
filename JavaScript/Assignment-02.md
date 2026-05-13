@@ -1,6 +1,6 @@
 # __📂02.JAVASCRIPT Assignment💻__
 
-## Section A: Basic Questions
+## 🔎Section A: Basic Questions
 
 ## __1. What are data types in JavaScript?__
 ### JavaScript has *8 data types:
@@ -180,7 +180,7 @@ typeof 3.14   // "number"
 
 *In short*: JS `Number` covers both integers and decimals. No separate `int` or `float` type.
 
-## Section B: Conceptual Questions
+## 🔎Section B: Conceptual Questions
 
 ## __11. What is the `symbol` data type in JavaScript?__
 
@@ -296,7 +296,7 @@ isNaN("hello")        // true
 Number.isNaN(NaN)     // true – safer, no coercion
 `NaN` = result of invalid math or failed number conversion. Check with `Number.isNaN()`.
 
-## Section C: Practical / Coding Questions
+## 🔎Section C: Practical / Coding Questions
 
 ### __17. Write a program to check the data type of a variable.__
 
@@ -467,7 +467,7 @@ console.log(typeof scores);  // object
 
 Use `Array.isArray(scores)` if you need to specifically detect arrays. That returns `true` for arrays, `false` for plain objects.
 
-## Section D: Advanced Thinking
+## 🔎Section D: Advanced Thinking
 
 ### __24. Can a variable change its data type? Explain with example.__
 

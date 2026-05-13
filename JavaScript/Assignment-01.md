@@ -1,4 +1,4 @@
-# __🖥01.JAVASCRIPT Assignment💻__
+# __📁01.JAVASCRIPT Assignment💻__
 
 ## 1. Who is the founder of JavaScript and when was it founded?
 Brendan Eich He created javascript within 10 days time period in 1994
