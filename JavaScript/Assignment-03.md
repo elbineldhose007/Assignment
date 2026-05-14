@@ -1,4 +1,4 @@
-# __03 📁JAVASCRIPT Assignment💻__ 
+# __📁03.JAVASCRIPT Assignment💻__ 
 
 ## 🔎Section A: Theory & Basics
 
