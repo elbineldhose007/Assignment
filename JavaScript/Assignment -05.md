@@ -24,7 +24,7 @@ if (num > 0) {
 }
 ```
 // Output: Positive
-### __2. Check if a number is even or odd__
+### __2. Check if a number is even or Odd__
 ### Concept: if-else
 
 __Answer;__
