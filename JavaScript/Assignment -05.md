@@ -1,4 +1,5 @@
-# __📁05.JAVASCRIPT Assignment-Condition💻__
+# __📁05.Condition Assignment💻__
+
 
 ### __1. Check if a number is positive or negative__
 ### Concept: if
